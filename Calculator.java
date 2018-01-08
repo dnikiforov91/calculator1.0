@@ -1,32 +1,16 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+
 public class Calculator extends JFrame implements ActionListener
 {
     String input = "";
         
     char operator = 'a';
     
-    double numOne = 0;
-    double numTwo = 0;
-    double answer = 0;
-    
-    JButton b7;
-    JButton b8;
-    JButton b9;
-    JButton bAdd;
-    JButton b4;
-    JButton b5;
-    JButton b6;
-    JButton bSubtract;
-    JButton b1;
-    JButton b2;
-    JButton b3;
-    JButton bMultiply;
-    JButton b0;
-    JButton bDecimal;
-    JButton bEqual;
-    JButton bDivide;
+    double numOne= 0, numTwo= 0, answer= 0; //intial values 
+
+    JButton b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bAdd, bSubtract, bMultiply, bDecimal, bEqual, bDivide; //buttons for the calculator
     
     JTextField tfExpression;
     JButton bClear;
@@ -44,7 +28,7 @@ public class Calculator extends JFrame implements ActionListener
         JPanel p2 = new JPanel();
         p1.setLayout( new GridLayout( 4, 4, 5, 5 ) ); //rows, columns, padding horiz, padding vert
         
-        setSize( 600, 400 ); //width, height
+        setSize( 800, 800 ); //width, height
         setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         
         //creating number buttons
